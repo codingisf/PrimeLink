@@ -191,7 +191,7 @@ function IndustriesPage() {
         {/* Image rows */}
         <div className="flex justify-around gap-x-10">
           <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 items-center gap-y-10 mt-10 gap-x-10">
-            <div className="h-90 w-70 bg-[url('Homepage/5.Construction&Engineering.jpg')] bg-cover bg-center bg-no-repeat rounded-lg relative">
+            <div className="h-90 w-70 bg-[url('/Homepage/5.Construction&Engineering.jpg')] bg-cover bg-center bg-no-repeat rounded-lg relative">
               <div className="absolute min-h-15 w-full bottom-0 rounded-lg backdrop-blur-lg bg-white/10">
                 <p className="text-white font-semibold text-xl w-[80%] px-5">
                   Construction & Engineering
@@ -199,35 +199,35 @@ function IndustriesPage() {
               </div>
               
             </div>
-            <div className="h-90 w-70 bg-[url('Homepage/5.Oil&Gassupply.jpg')] bg-cover bg-center bg-no-repeat rounded-lg relative">
+            <div className="h-90 w-70 bg-[url('/Homepage/5.Oil&Gassupply.jpg')] bg-cover bg-center bg-no-repeat rounded-lg relative">
               <div className="absolute min-h-15 w-full bottom-0 rounded-lg backdrop-blur-lg bg-white/10">
                 <p className="text-white font-semibold text-xl w-[80%] px-5">
                   Oil & Gas supply Industries
                 </p>
               </div>
             </div>
-            <div className="h-90 w-70 bg-[url('Homepage/5.Healthcare&MedicalIndustry.jpg')] bg-cover bg-center bg-no-repeat rounded-lg relative">
+            <div className="h-90 w-70 bg-[url('/Homepage/5.Healthcare&MedicalIndustry.jpg')] bg-cover bg-center bg-no-repeat rounded-lg relative">
               <div className="absolute min-h-15 w-full bottom-0 rounded-lg backdrop-blur-lg bg-white/10">
                 <p className="text-white font-semibold text-xl w-[80%] px-5">
                   Healthcare & Medical Industry
                 </p>
               </div>
             </div>
-            <div className="h-90 w-70 bg-[url('Homepage/5.Hospitality&CateringService.jpg')] bg-cover bg-center bg-no-repeat rounded-lg relative">
+            <div className="h-90 w-70 bg-[url('/Homepage/5.Hospitality&CateringService.jpg')] bg-cover bg-center bg-no-repeat rounded-lg relative">
               <div className="absolute min-h-15 w-full bottom-0 rounded-lg backdrop-blur-lg bg-white/10">
                 <p className="text-white font-semibold text-xl w-[80%] px-5">
                   Hospitality & Catering Services
                 </p>
               </div>
             </div>
-            <div className="h-90 w-70 bg-[url('Homepage/5.Manufacturing&Maintenance.jpg')] bg-cover bg-center bg-no-repeat rounded-lg relative">
+            <div className="h-90 w-70 bg-[url('/Homepage/5.Manufacturing&Maintenance.jpg')] bg-cover bg-center bg-no-repeat rounded-lg relative">
               <div className="absolute min-h-15 w-full bottom-0 rounded-lg backdrop-blur-lg bg-white/10">
                 <p className="text-white font-semibold text-xl w-[80%] px-5">
                   Manufacturing & Maintenance
                 </p>
               </div>
             </div>
-            <div className="h-90 w-70 bg-[url('Homepage/5.Security&FacilityManagement.jpg')] bg-cover bg-center bg-no-repeat rounded-lg relative">
+            <div className="h-90 w-70 bg-[url('/Homepage/5.Security&FacilityManagement.jpg')] bg-cover bg-center bg-no-repeat rounded-lg relative">
               <div className="absolute min-h-15 w-full bottom-0 rounded-lg backdrop-blur-lg bg-white/10">
                 <p className="text-white font-semibold text-xl w-[80%] px-5">
                   Security & Facility Management
@@ -328,3 +328,4 @@ function IndustriesPage() {
 }
 
 export default IndustriesPage
+
