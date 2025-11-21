@@ -7,7 +7,7 @@ function AboutPage() {
     <>
     
       {/* Section - 1  */}
-      <section className="bg-[url('Aboutus/1.Aboutus.jpg')]  bg-cover bg-center bg-no-repeat lg:h-screen w-full text-white h-fit py-5">
+      <section className="bg-[url('/Aboutus/1Aboutus.jpg')]  bg-cover bg-center bg-no-repeat lg:h-screen w-full text-white h-fit py-5">
         <StickyNavbar />
         <div className="flex flex-col w-full items-center gap-y-3 justify-center lg:h-[80%] h-fit">
           <p className="bg-white text-black w-fit px-4 py-2 rounded-4xl my-5">
@@ -63,7 +63,7 @@ function AboutPage() {
           {/* card-1 */}
           <div className="max-w-98 bg-white  px-6 border-2 border-gray-300 rounded-xl py-4">
             <div className="flex gap-4 items-center">
-              <div className="logo rounded-full w-15 h-15 bg-[url('Aboutus/2.Mission.jpg')] bg-cover bg-center bg-no-repeat"></div>
+              <div className="logo rounded-full w-15 h-15 bg-[url('/Aboutus/2.Mission.jpg')] bg-cover bg-center bg-no-repeat"></div>
               <h1 className="text-3xl font-semibold">Mission</h1>
             </div>
             <p className="mt-4">
@@ -76,7 +76,7 @@ function AboutPage() {
           {/* card-2 */}
           <div className="max-w-98 bg-white bg-cover px-6 border-2 border-gray-300 rounded-xl py-4">
             <div className="flex gap-4 items-center">
-              <div className="logo rounded-full w-15 h-15  bg-[url('Aboutus/2.values.jpg')] bg-cover bg-center bg-no-repeat"></div>
+              <div className="logo rounded-full w-15 h-15  bg-[url('/Aboutus/2.values.jpg')] bg-cover bg-center bg-no-repeat"></div>
               <h1 className="text-3xl font-semibold">Vision</h1>
             </div>
             <p className="mt-4">
@@ -89,7 +89,7 @@ function AboutPage() {
           {/* card-3 */}
           <div className="max-w-98 bg-white px-6 border-2 border-gray-300 rounded-xl py-4">
             <div className="flex gap-4 items-center">
-              <div className="logo rounded-full w-15 h-15 bg-[url('Aboutus/2.Vision.jpg')] bg-cover bg-center bg-no-repeat"></div>
+              <div className="logo rounded-full w-15 h-15 bg-[url('/Aboutus/2.Vision.jpg')] bg-cover bg-center bg-no-repeat"></div>
               <h1 className="text-3xl font-semibold">Values</h1>
             </div>
             <p className="mt-4">
@@ -103,7 +103,7 @@ function AboutPage() {
 
       {/* Image or section-3 */}
       <section className="bg-blue-50 w-full min-h-screen lg:px-30 lg:py-20 px-10 py-5 text-white flex items-center">
-        <div className="bg-[url('Aboutus/3.whychooseus.jpg')]  bg-cover bg-center bg-no-repeat h-[60vh] w-full mx-auto flex lg:flex-row flex-col justify-around items-center">
+        <div className="bg-[url('/Aboutus/3.whychooseus.jpg')]  bg-cover bg-center bg-no-repeat h-[60vh] w-full mx-auto flex lg:flex-row flex-col justify-around items-center">
           <div className="lg:w-1/2">
             <p className="bg-white text-black w-fit px-4 py-2 rounded-4xl my-5">
               Why choose us?
@@ -223,7 +223,7 @@ function AboutPage() {
 
       {/* Looking to hire the right */}
       <section className="w-full min-h-screen">
-        <div className="h-[80vh] w-full bg-[url('Aboutus/4.contactnow.jpg')]  bg-cover bg-center bg-no-repeat text-white flex flex-col justify-center items-center text-center gap-y-5">
+        <div className="h-[80vh] w-full bg-[url('/Aboutus/4.contactnow.jpg')]  bg-cover bg-center bg-no-repeat text-white flex flex-col justify-center items-center text-center gap-y-5">
           <p className="text-lg bg-white/10 backdrop-blur-xl rounded-full px-4 py-2">Looking to hire the right</p>
           <h1 className="lg:text-6xl">
             Trusted support for providing consistent , <br /> skilled manpower solutions.
