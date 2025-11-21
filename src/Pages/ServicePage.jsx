@@ -2,11 +2,11 @@ import React from "react";
 import StickyNavbar from "../components/StickyNavbar.jsx";
 import Footer from "../components/footer.jsx";
 
-function ServicePage() {
+function Servicepage() {
   return (
     <>
       {/* Section - 1  */}
-      <section className="bg-[url('Servicepage/1.ServicePage.jpg')]  bg-cover bg-center bg-no-repeat lg:h-screen w-full text-white h-fit py-5">
+      <section className="bg-[url('/Servicepage/1.Servicepage.jpg')]  bg-cover bg-center bg-no-repeat lg:h-screen w-full text-white h-fit py-5">
         <StickyNavbar />
         <div className="flex flex-col w-full items-center gap-y-3 justify-center lg:h-[80%] h-fit">
           <p className="bg-white text-black w-fit px-4 py-2 rounded-4xl my-5">
@@ -63,21 +63,21 @@ function ServicePage() {
         {/* Card */}
         <div className="flex justify-around gap-x-10">
           <div className="grid lg:grid-cols-3 grid-cols-1 items-center gap-y-10 mt-10 gap-x-10">
-            <div className="h-90 w-70 bg-[url('Servicepage/2.share.jpg')]  bg-cover bg-center bg-no-repeat rounded-lg relative">
+            <div className="h-90 w-70 bg-[url('/Servicepage/2.share.jpg')]  bg-cover bg-center bg-no-repeat rounded-lg relative">
               <div className="absolute min-h-15 w-[90%] bottom-0 rounded-t-lg backdrop-blur-lg bg-[#152e44]">
                 <p className="text-white font-semibold text-xl w-[80%] px-5">
                   1.Share Your Requirements
                 </p>
               </div>
             </div>
-            <div className="h-90 w-70 bg-[url('Servicepage/2.WeSource.jpg')]  bg-cover bg-center bg-no-repeat rounded-lg relative">
+            <div className="h-90 w-70 bg-[url('/Servicepage/2.WeSource.jpg')]  bg-cover bg-center bg-no-repeat rounded-lg relative">
               <div className="absolute min-h-15 w-[90%] bottom-0 rounded-t-lg backdrop-blur-lg bg-[#152e44]">
                 <p className="text-white font-semibold text-xl w-[80%] px-5">
                   2.We source & screen Talent
                 </p>
               </div>
             </div>
-            <div className="h-90 w-70 bg-[url('Servicepage/2.Deploy.jpg')]  bg-cover bg-center bg-no-repeat rounded-lg relative">
+            <div className="h-90 w-70 bg-[url('/Servicepage/2.Deploy.jpg')]  bg-cover bg-center bg-no-repeat rounded-lg relative">
               <div className="absolute min-h-15 w-[90%] bottom-0 rounded-t-lg backdrop-blur-lg bg-[#152e44]">
                 <p className="text-white font-semibold text-xl w-[80%] px-5">
                   3.Deploy & Support
@@ -167,21 +167,21 @@ function ServicePage() {
             </div>
             <div className="">
               <div className="min-h-20 px-6 py-4 mt-4 bg-white rounded-lg flex items-center gap-5">
-                <div className="bg-[url('Servicepage/4.Quality.jpg')] h-15 w-40 lg:w-20 bg-cover bg-center bg-no-repeat"></div>
+                <div className="bg-[url('/Servicepage/4.Quality.jpg')] h-15 w-40 lg:w-20 bg-cover bg-center bg-no-repeat"></div>
                 <div className="">
                 <h1 className="lg:text-2xl text-lg font-semibold">Quality You Can Trust</h1>
                 <p>Every candidate is carefully evaluated to ensure they meet industry standards and perform with reliablity</p>
                 </div>
               </div>
               <div className="min-h-20 px-6 py-4 mt-4 bg-white rounded-lg flex items-center gap-5">
-                <div className="bg-[url('Servicepage/4.Service.jpg')] h-15 w-40 lg:w-20 bg-cover bg-center bg-no-repeat"></div>
+                <div className="bg-[url('/Servicepage/4.Service.jpg')] h-15 w-40 lg:w-20 bg-cover bg-center bg-no-repeat"></div>
                 <div className="">
                 <h1 className="lg:text-2xl text-lg font-semibold">Quality You Can Trust</h1>
                 <p>Every candidate is carefully evaluated to ensure they meet industry standards and perform with reliablity</p>
                 </div>
               </div>
               <div className="min-h-20 px-6 py-4 mt-4 bg-white rounded-lg flex items-center gap-5">
-               <div className="bg-[url('Servicepage/4.Support.jpg')] h-15 w-40 lg:w-20 bg-cover bg-center bg-no-repeat"></div>
+               <div className="bg-[url('/Servicepage/4.Support.jpg')] h-15 w-40 lg:w-20 bg-cover bg-center bg-no-repeat"></div>
                <div className="">
                 <h1 className="lg:text-2xl text-lg font-semibold">Quality You Can Trust</h1>
                 <p>Every candidate is carefully evaluated to ensure they meet industry standards and perform with reliablity</p>
@@ -189,7 +189,7 @@ function ServicePage() {
               </div>
             </div>
           </div>
-          <div className="bg-[url('Servicepage/5.Qualitygurantee.jpg')]  bg-cover bg-center bg-no-repeat h-[70vh] lg:w-[45%] w-full"></div>
+          <div className="bg-[url('/Servicepage/5.Qualitygurantee.jpg')]  bg-cover bg-center bg-no-repeat h-[70vh] lg:w-[45%] w-full"></div>
         </div>
       </section>
 
@@ -219,4 +219,4 @@ function ServicePage() {
   );
 }
 
-export default ServicePage;
+export default Servicepage;
