@@ -358,7 +358,7 @@ function HomePage() {
                 </p>
               </div>
             </div>
-            <div className="h-90 w-70 bg-[url('Homepage/5.Manufacturing&Maintenance.jpg')] bg-cover bg-center bg-no-repeat rounded-lg relative">
+            <div className="h-90 w-70 bg-[url('/Homepage/5.Manufacturing&Maintenance.jpg')] bg-cover bg-center bg-no-repeat rounded-lg relative">
               <div className="absolute min-h-15 w-full bottom-0 rounded-lg backdrop-blur-lg bg-white/10">
                 <p className="text-white font-semibold text-xl w-[80%] px-5">
                   Manufacturing & Maintenance
@@ -471,4 +471,5 @@ function HomePage() {
 }
 
 export default HomePage;
+
 
