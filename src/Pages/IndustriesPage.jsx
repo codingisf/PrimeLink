@@ -40,7 +40,7 @@ function IndustriesPage() {
   return (
     <>
     {/* Section - 1  */}
-      <section className="bg-[url('Industries/1.Industrieshome.jpg')] bg-cover bg-center lg:h-[80vh] w-full text-white h-fit py-5">
+      <section className="bg-[url('/Industries/1.Industrieshome.jpg')] bg-cover bg-center lg:h-[80vh] w-full text-white h-fit py-5">
         <StickyNavbar />
         <div className="flex flex-col w-full items-center gap-y-3 justify-center lg:h-[80%] h-fit">
           <p className="bg-white text-black w-fit px-4 py-2 rounded-4xl my-5">
