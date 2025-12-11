@@ -5,26 +5,24 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 
 function IndustriesPage() {
   const testimonials = [
-    // Add more items as needed
     {
-      name: "Alice",
-      role: "Frontend Developer",
-      testimonial: "Great service!",
+      name: "Kani Kumar",
+      role: "Welder",
+      testimonial: "Your Manpower agency has been delivering consistent and professional service. The recruitment process is well Organized. Communication, Follow ups, and document handling are handled efficiently. Overall, we are satisfied with the quality of service",
+      url:"/Fedback-1.jpg",
     },
     {
-      name: "Bob",
-      role: "Backend Developer",
-      testimonial: "Amazing experience!",
+      name: "Sarathy",
+      role: "Restaurant Supervisor",
+      testimonial: "Excellent service, Thank you to PrimeLink Manpower & Staffing for arranging me with a job abroad at the best possible time with a great salary ",
+      url:"/Fedback-2.jpg",
     },
-    { name: "Charlie", role: "Designer", testimonial: "Loved the quality!" },
     {
-      name: "David",
-      role: "Product Manager",
-      testimonial: "Fantastic results!",
+      name: "Mano",
+      role: "A.C Technician",
+      testimonial: "Great company, great service. An example of a good company is proper communication.That way, whenever this company contacts you, they give you a correct and clear explanation",
+      url:"/Fedback-3.jpg",
     },
-    { name: "Eva", role: "DevOps Engineer", testimonial: "Highly efficient!" },
-    { name: "Frank", role: "Tester", testimonial: "Reliable and fast!" },
-    { name: "Grace", role: "CEO", testimonial: "Top-notch delivery!" },
   ];
 
   const scrollRef = useRef(null);
@@ -35,6 +33,34 @@ function IndustriesPage() {
 
   const scrollRight = () => {
     scrollRef.current.scrollBy({ left: 300, behavior: "smooth" });
+  };
+
+    const FlipCard = ({ image, title, roles }) => {
+    return (
+      <div className="group perspective">
+        <div className="relative h-[22rem] w-[18rem] transition-transform duration-700 preserve-3d group-hover:rotate-y-180">
+          {/* Front Side */}
+          <div
+            className="absolute inset-0 rounded-lg bg-cover bg-center bg-no-repeat backface-hidden"
+            style={{ backgroundImage: `url(${image})` }}
+          >
+            <div className="absolute bottom-0 w-full rounded-b-lg backdrop-blur-lg bg-white/10 py-3 px-5">
+              <p className="text-white font-semibold text-xl">{title}</p>
+            </div>
+          </div>
+
+          {/* Back Side */}
+          <div className="absolute inset-0 rounded-lg bg-gray-900 text-white p-5 rotate-y-180 backface-hidden flex flex-col justify-start overflow-auto">
+            <h2 className="text-2xl font-bold mb-3">{title}</h2>
+            <ul className="list-disc list-inside text-base opacity-80 space-y-1">
+              {roles.map((role, index) => (
+                <li key={index}>{role}</li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </div>
+    );
   };
 
   return (
@@ -166,7 +192,7 @@ function IndustriesPage() {
         </section>
     
       {/* Industry we serve */}
-      <section className="w-full min-h-screen px-10 py-5 lg:px-30 lg:py-20">
+      <section className="w-full min-h-screen px-10 py-5 lg:px-30 lg:py-20 z-10">
         {/* Top */}
         <div className="flex flex-col w-full items-center gap-y-3">
           <p className="bg-gray-200 w-fit px-4 py-2 rounded-4xl my-5">
@@ -189,51 +215,103 @@ function IndustriesPage() {
         </div>
 
         {/* Image rows */}
-        <div className="flex justify-around gap-x-10">
-          <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 items-center gap-y-10 mt-10 gap-x-10">
-            <div className="h-90 w-70 bg-[url('/Homepage/5.Construction&Engineering.jpg')] bg-cover bg-center bg-no-repeat rounded-lg relative">
-              <div className="absolute min-h-15 w-full bottom-0 rounded-lg backdrop-blur-lg bg-white/10">
-                <p className="text-white font-semibold text-xl w-[80%] px-5">
-                  Construction & Engineering
-                </p>
-              </div>
-              
-            </div>
-            <div className="h-90 w-70 bg-[url('/Homepage/5.Oil&Gassupply.jpg')] bg-cover bg-center bg-no-repeat rounded-lg relative">
-              <div className="absolute min-h-15 w-full bottom-0 rounded-lg backdrop-blur-lg bg-white/10">
-                <p className="text-white font-semibold text-xl w-[80%] px-5">
-                  Oil & Gas supply Industries
-                </p>
-              </div>
-            </div>
-            <div className="h-90 w-70 bg-[url('/Homepage/5.Healthcare&MedicalIndustry.jpg')] bg-cover bg-center bg-no-repeat rounded-lg relative">
-              <div className="absolute min-h-15 w-full bottom-0 rounded-lg backdrop-blur-lg bg-white/10">
-                <p className="text-white font-semibold text-xl w-[80%] px-5">
-                  Healthcare & Medical Industry
-                </p>
-              </div>
-            </div>
-            <div className="h-90 w-70 bg-[url('/Homepage/5.Hospitality&CateringService.jpg')] bg-cover bg-center bg-no-repeat rounded-lg relative">
-              <div className="absolute min-h-15 w-full bottom-0 rounded-lg backdrop-blur-lg bg-white/10">
-                <p className="text-white font-semibold text-xl w-[80%] px-5">
-                  Hospitality & Catering Services
-                </p>
-              </div>
-            </div>
-            <div className="h-90 w-70 bg-[url('/Homepage/5.Manufacturing&Maintenance.jpg')] bg-cover bg-center bg-no-repeat rounded-lg relative">
-              <div className="absolute min-h-15 w-full bottom-0 rounded-lg backdrop-blur-lg bg-white/10">
-                <p className="text-white font-semibold text-xl w-[80%] px-5">
-                  Manufacturing & Maintenance
-                </p>
-              </div>
-            </div>
-            <div className="h-90 w-70 bg-[url('/Homepage/5.Security&FacilityManagement.jpg')] bg-cover bg-center bg-no-repeat rounded-lg relative">
-              <div className="absolute min-h-15 w-full bottom-0 rounded-lg backdrop-blur-lg bg-white/10">
-                <p className="text-white font-semibold text-xl w-[80%] px-5">
-                  Security & Facility Management
-                </p>
-              </div>
-            </div>
+                <div className="mt-10 mx-auto max-w-7xl">
+          <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 items-center gap-y-10 gap-x-10">
+            <FlipCard
+              image="/Homepage/5.Construction&Engineering.jpg"
+              title="Construction & Engineering"
+              roles={[
+                "Civil Engineer",
+                "Architect",
+                "Foreman",
+                "Surveyor",
+                "Health & Safety Inspector",
+                "Brick Mason",
+                "Tiles Mason",
+                "Carpenter",
+                "Plumber",
+                "Electrician",
+                "Welder",
+                "Painter",
+                "Pipe Fitter",
+              ]}
+            />
+
+            <FlipCard
+              image="/Homepage/5.Oil&Gassupply.jpg"
+              title="Oil & Gas Supply Industries"
+              roles={[
+                "Chemical Engineer",
+                "Drilling Engineer",
+                "Production Engineer",
+                "Pipeline Technician",
+                "Rig Operator",
+                "Gas Plant Operator",
+                "Welder",
+                "Driller",
+                "Supply Chain Manager",
+              ]}
+            />
+
+            <FlipCard
+              image="/Homepage/5.Healthcare&MedicalIndustry.jpg"
+              title="Healthcare & Medical Industry"
+              roles={[
+                "Physicians and Surgeons",
+                "Nursing and Midwifery",
+                "Pharmacist",
+                "Laboratory Technician",
+                "Dietitian",
+                "Dental Assistant",
+                "Biomedical Engineer",
+                "OT Technician",
+                "Receptionist",
+                "Optometrist",
+                "Administrative Assistant",
+              ]}
+            />
+
+            <FlipCard
+              image="/Homepage/5.Hospitality&CateringService.jpg"
+              title="Hospitality & Catering Services"
+              roles={[
+                "Hotel Manager",
+                "Receptionist",
+                "Housekeeper",
+                "Room Attendant",
+                "Chef",
+                "Restaurant Manager",
+                "Catering Manager",
+                "Waiter",
+                "Travel Agent",
+              ]}
+            />
+
+            <FlipCard
+              image="/Homepage/5.Manufacturing&Maintenance.jpg"
+              title="Manufacturing & Maintenance"
+              roles={[
+                "Production Worker",
+                "Machine Operator",
+                "Quality Control Inspector",
+                "Welder",
+                "Industrial Engineer",
+                "Mechanical Engineer",
+                "Supply Chain & Logistics Manager",
+                "General Labour",
+              ]}
+            />
+
+            <FlipCard
+              image="/Homepage/5.Security&FacilityManagement.jpg"
+              title="Security & Facility Management"
+              roles={[
+                "Security Service",
+                "Housekeeping Service",
+                "CCTV Operator",
+                "General Labour",
+              ]}
+            />
           </div>
         </div>
       </section>
@@ -288,12 +366,15 @@ function IndustriesPage() {
             {testimonials.map((item, index) => (
               <div
                 key={index}
-                className="w-[250px] min-w-[250px] bg-white shadow-lg rounded-2xl p-5 flex-shrink-0"
+                className="w-[250px] min-w-[250px] bg-white shadow-lg rounded-2xl p-5 flex-shrink-0 flex flex-col justify-between"
               >
-                <p className="text-lg italic">"{item.testimonial}"</p>
-                <p className="mt-4 font-semibold">
-                  - {item.name}, <span className="text-sm">{item.role}</span>
+                <img src={item.url} alt="No image :(" className="h-55 w-60"/>
+                <div className="align-text-bottom h-[50%]">
+                <p className="text-md italic">"{item.testimonial}"</p>
+                <p className="mt-4 font-semibold text-right">
+                  - {item.name}, <br /><span className="text-sm">{item.role}</span>
                 </p>
+                </div>
               </div>
             ))}
           </div>
@@ -328,4 +409,3 @@ function IndustriesPage() {
 }
 
 export default IndustriesPage
-
