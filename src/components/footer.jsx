@@ -6,8 +6,8 @@ function footer() {
      
       <div className="flex justify-around lg:flex-row flex-col">
         <div className="lg:w-[40%] text-start">
-          <img src="/logo.svg" alt="" className="h-40 w-40" />
-          <p className="text-5xl font-semibold">Prime Link</p>
+          <img src="/logo.svg" alt="" className="lg:h-40 lg:w-40 h-20 w-40" />
+          <p className="lg:text-5xl text-3xl font-semibold">Prime Link</p>
           <p className="text-xl">MANPOWER & STAFFING</p>
           <div className="flex items-center py-2">
             <p>📞</p>
