@@ -26,8 +26,8 @@ const StickyNavbar = () => {
         <div className="flex items-center flex-col">
       
           <img src="/logo.svg" alt="Logo" className="w-14"/>
-        <Link to="/" className="text-2xl font-bold ">
-          PrimeLink
+        <Link to="/" className="text-2xl font-bold text-center">
+          PrimeLink <br /> Manpower & Staffing
         </Link>
         </div>
         {/* <p>Manpower & staffing</p> */}
@@ -54,7 +54,7 @@ const StickyNavbar = () => {
 
              <Link to={'/contact'}>
              <a href="/contact">
-          <button className="ml-4 rounded-lg bg-[#152e44] hover:border border-[#152e44] hover:cursor-pointer hover:bg-transparent px-4 py-2 text-sm font-semibold text-white  transition-colors" >
+          <button className="ml-4 rounded-lg bg-[#152e44] border border-[#152e44] hover:cursor-pointer hover:bg-transparent px-4 py-2 text-sm font-semibold text-white  transition-colors" >
             Contact us
           </button>
           </a>
