@@ -381,7 +381,7 @@ function HomePage() {
             >
               <div className="bg-gray-800 absolute  w-[90%] min-h-10 bottom-1 rounded-t-xl ">
                 <h1 className="text-xl lg:text-3xl text-white font-semibold p-2">
-                  Temorary and Contract Staffing
+                  Temporary and Contract Staffing
                 </h1>
               </div>
             </div>
@@ -846,3 +846,4 @@ function HomePage() {
 }
 
 export default HomePage;
+
