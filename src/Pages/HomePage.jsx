@@ -295,7 +295,7 @@ function HomePage() {
               handler={handlefirstOpen}
               className="z-[9999]"
             >
-              <DialogHeader>PrimeLink Manpower & Staffing</DialogHeader>
+              <DialogHeader>Man Power Supply</DialogHeader>
               <DialogBody>
                 PrimeLink Manpower & Staffing delivers dependable manpower
                 supply solutions, Providing skilled and unskilled workforce to
@@ -438,7 +438,7 @@ function HomePage() {
               handler={handlefourthOpen}
               className="z-[9999]"
             >
-              <DialogHeader>Overseas Requirement</DialogHeader>
+              <DialogHeader>Client and Candidates Support</DialogHeader>
               <DialogBody>
                 PrimeLink Manpower & Staffing Cover the complete hiring
                 lifecycle - from candidate sourcing and screening to
@@ -846,4 +846,5 @@ function HomePage() {
 }
 
 export default HomePage;
+
 
