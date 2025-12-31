@@ -122,30 +122,36 @@ function Servicepage() {
       {/* What we do */}
       <section className="w-full min-h-screen px-10 py-5 lg:px-30 lg:py-20">
         <div className="flex flex-col w-full items-center gap-y-3">
-          <p className="bg-gray-200 w-fit px-4 py-2 rounded-4xl my-5">
-            What we do
-          </p>
-
-          <div className="font-semibold lg:text-4xl text-3xl text-center lg:w-1/2">
-            <p className="leading-10">
-              Modern{" "}
-              <span className="text-blue-800 w-1/3">Manpower Services</span>{" "}
-              <br />
-              Build for Every Industry!
+          <Reveal>
+            <p className="bg-gray-200 w-fit px-4 py-2 rounded-4xl my-5">
+              What we do
             </p>
+          </Reveal>
+
+          <div className="font-semibold lg:text-4xl text-3xl text-center lg:w-1/2 flex flex-col w-full items-center">
+            <Reveal delay={0.2}>
+              <p className="leading-10">
+                Modern{" "}
+                <span className="text-blue-800 w-1/3">Manpower Services</span>{" "}
+                <br />
+                Build for Every Industry!
+              </p>
+            </Reveal>
           </div>
 
-          <p className="text-center">
-            We provide fast , flexiable manpower for your businesses. Our
-            skilled worker help <br />
-            you stay productive and grow.
-          </p>
+          <Reveal delay={0.3}>
+            <p className="text-center">
+              We provide fast, flexible manpower for your businesses. Our
+              skilled workers help <br />
+              you stay productive and grow.
+            </p>
+          </Reveal>
         </div>
 
         {/* Image sections */}
 
-        <div className="">
-          <div className="flex lg:flex-row flex-col justify-evenly gap-y-10 my-10 lg:mx-16">
+        <div className=" mt-5">
+          <div className="flex lg:flex-row flex-col justify-evenly w-full items-center gap-y-10">
             <Reveal>
               <div
                 className="bg-[url('/Homepage/3.ManPowerSupply.png')] bg-cover bg-center bg-no-repeat lg:w-[390px] gap-y-5 h-60 rounded-xl relative "
@@ -164,10 +170,10 @@ function Servicepage() {
               handler={handlefirstOpen}
               className="z-[9999]"
             >
-              <DialogHeader>Man power supply</DialogHeader>
+              <DialogHeader>Man Power Supply</DialogHeader>
               <DialogBody>
                 PrimeLink Manpower & Staffing delivers dependable manpower
-                supply solutions, Providing skilled and unskilled workforce to
+                supply solutions, providing skilled and unskilled workforce to
                 meet global business demands. We ensure quality recruitment,
                 timely deployment and complete compliance for seamless workforce
                 management.
@@ -193,7 +199,7 @@ function Servicepage() {
               </DialogFooter>
             </Dialog>
 
-            <Reveal delay={0.2}>
+            <Reveal>
               <div
                 className="bg-[url('/Homepage/3.OvearseasRequirement.jpg')] bg-cover bg-center bg-no-repeat lg:w-[390px] gap-y-5 h-60 rounded-xl relative"
                 onClick={handlesecondOpen}
@@ -242,8 +248,8 @@ function Servicepage() {
             </DialogFooter>
           </Dialog>
 
-          <div className="flex lg:flex-row flex-col justify-evenly gap-y-10 my-10 lg:mx-16">
-            <Reveal delay={0.3}>
+          <div className="flex lg:flex-row flex-col mt-10 w-full items-center justify-evenly gap-y-10 ">
+            <Reveal>
               <div
                 className="bg-[url('/Homepage/3.Temporaryandcontractstaffing.jpg')]  bg-cover bg-center bg-no-repeat lg:w-[390px] gap-y-5 h-60 rounded-xl relative"
                 onClick={handlethirdOpen}
@@ -289,7 +295,7 @@ function Servicepage() {
               </DialogFooter>
             </Dialog>
 
-            <Reveal delay={0.4}>
+            <Reveal>
               <div
                 className="bg-[url('/Homepage/3.Clientsandcandidatessupport.jpg')] bg-cover bg-center bg-no-repeat lg:w-[390px] gap-y-5 h-60 rounded-xl relative"
                 onClick={handlefourthOpen}
@@ -309,13 +315,13 @@ function Servicepage() {
             >
               <DialogHeader>Client and Candidates Support</DialogHeader>
               <DialogBody>
-                PrimeLink Manpower & Staffing Cover the complete hiring
+                PrimeLink Manpower & Staffing Covers the complete hiring
                 lifecycle - from candidate sourcing and screening to
                 documentation, visa processing and final deployment. With
                 in-depth knowledge of international labour markets and country-
                 specific regulations, we ensure smooth and transparent
                 recruitment for both employers and candidates. Our Client and
-                Candidates Support Services Included:
+                Candidates Support Services Include:
                 <br />
                 <ul className="list-disc px-16 py-5">
                   <li>Understanding Client Requirements</li>
@@ -480,4 +486,3 @@ function Servicepage() {
 }
 
 export default Servicepage;
-
