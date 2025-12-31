@@ -103,9 +103,9 @@ function IndustriesPage() {
           <div className="font-semibold lg:text-6xl text-3xl text-center relative">
             <Reveal>
               <p className="lg:leading-14">
-                Providing Reliable Talent for <br /> Role Across
+                Providing Reliable Talent for <br /> Role Across{" "}
                 <span className="text-blue-800 relative inline-block">
-                  {" "}
+                  
                   All Industries
                   <img
                     src="/line.svg"
@@ -498,3 +498,4 @@ function IndustriesPage() {
 }
 
 export default IndustriesPage;
+
