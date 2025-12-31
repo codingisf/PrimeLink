@@ -13,7 +13,7 @@ function IndustriesPage() {
       name: "Kani Kumar",
       role: "Welder",
       testimonial:
-        "Your Manpower agency has been delivering consistent and professional service. The recruitment process is well Organized. Communication, Follow ups, and document handling are handled efficiently. Overall, we are satisfied with the quality of service",
+        "Your Manpower agency has been delivering consistent and professional service. The recruitment process is well organized. Communication, follow-ups, and document handling are handled efficiently. Overall, we are satisfied with the quality of service",
       url: "/Fedback-1.jpg",
     },
     {
@@ -27,14 +27,14 @@ function IndustriesPage() {
       name: "Mano",
       role: "A.C Technician",
       testimonial:
-        "Great company, great service. An example of a good company is proper communication.That way, whenever this company contacts you, they give you a correct and clear explanation",
+        "Great company, great service. An example of a good company is proper communication. That way, whenever this company contacts you, they give you a correct and clear explanation",
       url: "/Fedback-3.jpg",
     },
     {
       name: "Samson",
       role: "Operation Theatre Technician",
       testimonial:
-        "Working with Primelinkmanpower and staffing was an exceptional experience from start to finish. I was kept informed with prompt updates, and their encouragement gave me the confidence to excel in interviews. Thanks for their professionalism and genuine care!",
+        "Working with Prime Link Manpower and staffing was an exceptional experience from start to finish. I was kept informed with prompt updates, and their encouragement gave me the confidence to excel in interviews. Thanks for their professionalism and genuine care!",
       url: "/Fedback-4.jpeg",
     },
     {
@@ -103,9 +103,8 @@ function IndustriesPage() {
           <div className="font-semibold lg:text-6xl text-3xl text-center relative">
             <Reveal>
               <p className="lg:leading-14">
-                Providing Reliable Talent for <br /> Role Across{" "}
+                Providing Reliable Talent for <br /> Roles Across{" "}
                 <span className="text-blue-800 relative inline-block">
-                  
                   All Industries
                   <img
                     src="/line.svg"
@@ -119,9 +118,9 @@ function IndustriesPage() {
           </div>
           <Reveal>
             <p className="text-center">
-              we make hiring simple ,fast , and efficient. Our team connects
-              companies with solid, verified across multiple industries <br />{" "}
-              delivering the right people exactly when you need them.
+              we make hiring simple, fast, and efficient. Our team connects
+              companies with solid, verified talent across multiple industries{" "}
+              <br /> delivering the right people exactly when you need them.
             </p>
           </Reveal>
         </div>
@@ -135,15 +134,15 @@ function IndustriesPage() {
       {/* Section - 2  */}
       <section className="bg-blue-50 text-center w-full min-h-screen lg:px-30 lg:py-20 px-10 py-5">
         <p className="bg-gray-200 w-fit px-4 py-2 rounded-4xl my-5 mx-auto">
-          Our Journey on industry
+          Our Journey in the Industry
         </p>
         <Reveal>
           <div className="mx-auto">
             <div className="lg:text-4xl text-2xl font-semibold">
               <p className="lg:text-5xl">
-                The Start of Our Journey , Built on a Passion <br /> to Serve
+                The Start of Our Journey, Built on a Passion <br /> to Serve{" "}
                 <span className="relative inline-block text-blue-800">
-                  {" "}
+                  
                   Every Sector
                   <img
                     src="/line.svg"
@@ -157,8 +156,8 @@ function IndustriesPage() {
 
             <div className="text-center lg:w-[70%] mx-auto mt-10 ">
               <p className="lg:text-lg text-md mb-5">
-                we make hiring simple ,fast , and efficient. Our team connects
-                companies with solid, verified across multiple industries
+                we make hiring simple, fast, and efficient. Our team connects
+                companies with solid, verified talent across multiple industries
                 delivering the right people exactly when you need them.
               </p>
             </div>
@@ -174,7 +173,7 @@ function IndustriesPage() {
                 </h1>
               </div>
               <p className="mt-4">
-                We aim to deliver reliable, skilled manpower tha helips
+                We aim to deliver reliable, skilled manpower that helps
                 businesses work smarter and grow faster. Our mission is to
                 provide seamless staffing support.
               </p>
@@ -191,7 +190,7 @@ function IndustriesPage() {
               </div>
               <p className="mt-4">
                 From day one, we focused on skilled, verified talent and
-                reliable service-erning the trust of businesses across
+                reliable service - earning the trust of businesses across
                 industries.
               </p>
             </div>
@@ -234,7 +233,7 @@ function IndustriesPage() {
               <div className="lg:w-[30%]">
                 <p className="lg:text-6xl text-3xl font-bold mb-5">10k+</p>
                 <p className="lg:text-lg  mb-3">
-                  People has landed a job abroad
+                  People have landed a job abroad
                 </p>
               </div>
               <div className="lg:w-[30%]">
@@ -267,8 +266,8 @@ function IndustriesPage() {
 
           <Reveal>
             <p className="text-center">
-              We provide fast , flexiable manpower for your businesses. Our
-              skilled worker help <br />
+              We provide fast, flexible manpower for your businesses. Our
+              skilled workers help <br />
               you stay productive and grow.
             </p>
           </Reveal>
@@ -481,7 +480,7 @@ function IndustriesPage() {
       {/* Contact on prime */}
       <section className="w-full min-h-screen">
         <div className="h-[80vh] w-full bg-blue-400 text-white flex flex-col justify-center items-center text-center gap-y-5">
-          <p>if you needed</p>
+          <p>If you need</p>
           <h1 className="lg:text-6xl">
             Your trusted partner for consistent, <br /> high-quality manpower.
           </h1>
@@ -498,4 +497,3 @@ function IndustriesPage() {
 }
 
 export default IndustriesPage;
-
