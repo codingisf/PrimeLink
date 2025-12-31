@@ -612,7 +612,7 @@ function HomePage() {
 
           <div className="font-semibold lg:text-4xl text-3xl text-center lg:w-1/2">
             <p className="leading-10">
-              providing skilled manpower for <br /> a
+              Providing skilled manpower for <br /> a
               <span className="text-blue-800 w-1/3"> wide range</span> of
               Industry!
             </p>
@@ -846,5 +846,6 @@ function HomePage() {
 }
 
 export default HomePage;
+
 
 
