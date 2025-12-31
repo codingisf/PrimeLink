@@ -72,7 +72,7 @@ function Footer() {
                 </div>
                 <p className="text-sm text-gray-300 leading-relaxed">
                   Palayakaram, Ayakkaranpulam, <br />
-                  Vedaranyam(TK), Nagapattinam(DT) <br />
+                  Vedaranyam (TK), Nagapattinam (DT) <br />
                   Pin 614707
                 </p>
               </div>
@@ -110,7 +110,7 @@ function Footer() {
                     className="hover:text-blue-400 transition-colors flex items-center gap-2"
                   >
                     <span className="h-1 w-1 bg-blue-400 rounded-full opacity-0 hover:opacity-100 transition-opacity"></span>
-                    About us
+                    About Us
                   </a>
                 </li>
                 <li>
@@ -119,7 +119,7 @@ function Footer() {
                     className="hover:text-blue-400 transition-colors flex items-center gap-2"
                   >
                     <span className="h-1 w-1 bg-blue-400 rounded-full opacity-0 hover:opacity-100 transition-opacity"></span>
-                    Contact us
+                    Contact Us
                   </a>
                 </li>
               </ul>
@@ -135,7 +135,7 @@ function Footer() {
                     className="hover:text-blue-400 transition-colors flex items-center gap-2"
                   >
                     <span className="h-1 w-1 bg-blue-400 rounded-full opacity-0 hover:opacity-100 transition-opacity"></span>
-                    Manpower supply
+                    Manpower Supply
                   </a>
                 </li>
                 <li>
@@ -144,7 +144,7 @@ function Footer() {
                     className="hover:text-blue-400 transition-colors flex items-center gap-2"
                   >
                     <span className="h-1 w-1 bg-blue-400 rounded-full opacity-0 hover:opacity-100 transition-opacity"></span>
-                    Overseas requirement
+                    Overseas Requirement
                   </a>
                 </li>
                 <li>
@@ -153,7 +153,7 @@ function Footer() {
                     className="hover:text-blue-400 transition-colors flex items-center gap-2"
                   >
                     <span className="h-1 w-1 bg-blue-400 rounded-full opacity-0 hover:opacity-100 transition-opacity"></span>
-                    Temporary & contract staffing
+                    Temporary & Contract Staffing
                   </a>
                 </li>
                 <li>
@@ -162,7 +162,7 @@ function Footer() {
                     className="hover:text-blue-400 transition-colors flex items-center gap-2"
                   >
                     <span className="h-1 w-1 bg-blue-400 rounded-full opacity-0 hover:opacity-100 transition-opacity"></span>
-                    Clients & candidate support
+                    Clients & Candidate Support
                   </a>
                 </li>
               </ul>
@@ -187,7 +187,7 @@ function Footer() {
                     className="hover:text-blue-400 transition-colors flex items-center gap-2"
                   >
                     <span className="h-1 w-1 bg-blue-400 rounded-full opacity-0 hover:opacity-100 transition-opacity"></span>
-                    Oil & gas industry
+                    Oil & Gas Industry
                   </a>
                 </li>
                 <li>
@@ -196,7 +196,7 @@ function Footer() {
                     className="hover:text-blue-400 transition-colors flex items-center gap-2"
                   >
                     <span className="h-1 w-1 bg-blue-400 rounded-full opacity-0 hover:opacity-100 transition-opacity"></span>
-                    Healthcare and medical
+                    Healthcare and Medical
                   </a>
                 </li>
                 <li>
@@ -205,7 +205,7 @@ function Footer() {
                     className="hover:text-blue-400 transition-colors flex items-center gap-2"
                   >
                     <span className="h-1 w-1 bg-blue-400 rounded-full opacity-0 hover:opacity-100 transition-opacity"></span>
-                    Hospitality services
+                    Hospitality Services
                   </a>
                 </li>
               </ul>
@@ -239,7 +239,7 @@ function Footer() {
               />
             </a>
             <a
-              href="#"
+              href="https://www.linkedin.com/in/primelink-manpower-and-staffing-92114039b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BV0RRFmXCTVSQg1L2bXlhIg%3D%3D"
               className="bg-gray-800 p-2 rounded-full hover:bg-blue-500 hover:text-white transition-all duration-300 group"
             >
               <Linkedin
@@ -248,7 +248,7 @@ function Footer() {
               />
             </a>
             <a
-              href="#"
+              href="https://www.instagram.com/primelinkmanpower/?utm_source=qr&igsh=N3I0czVtNHl4Z2Rs#"
               className="bg-gray-800 p-2 rounded-full hover:bg-pink-600 hover:text-white transition-all duration-300 group"
             >
               <Instagram
