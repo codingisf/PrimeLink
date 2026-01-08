@@ -154,12 +154,13 @@ function Servicepage() {
           <div className="flex lg:flex-row flex-col justify-evenly w-full items-center gap-y-10">
             <Reveal>
               <div
+                id="manpower-supply"
                 className="bg-[url('/Homepage/3.ManPowerSupply.png')] bg-cover bg-center bg-no-repeat lg:w-[390px] gap-y-5 h-60 rounded-xl relative "
                 onClick={handlefirstOpen}
               >
                 <div className="bg-gray-800 absolute w-[90%] min-h-10 bottom-1 rounded-t-xl">
                   <h1 className="text-xl lg:text-3xl text-white font-semibold p-2">
-                    Man Power Supply
+                    Manpower Supply
                   </h1>
                 </div>
               </div>
@@ -201,6 +202,7 @@ function Servicepage() {
 
             <Reveal>
               <div
+                id="overseas-requirement"
                 className="bg-[url('/Homepage/3.OvearseasRequirement.jpg')] bg-cover bg-center bg-no-repeat lg:w-[390px] gap-y-5 h-60 rounded-xl relative"
                 onClick={handlesecondOpen}
               >
@@ -251,6 +253,7 @@ function Servicepage() {
           <div className="flex lg:flex-row flex-col mt-10 w-full items-center justify-evenly gap-y-10 ">
             <Reveal>
               <div
+                id="contract-staffing"
                 className="bg-[url('/Homepage/3.Temporaryandcontractstaffing.jpg')]  bg-cover bg-center bg-no-repeat lg:w-[390px] gap-y-5 h-60 rounded-xl relative"
                 onClick={handlethirdOpen}
               >
@@ -297,6 +300,7 @@ function Servicepage() {
 
             <Reveal>
               <div
+                id="client-support"
                 className="bg-[url('/Homepage/3.Clientsandcandidatessupport.jpg')] bg-cover bg-center bg-no-repeat lg:w-[390px] gap-y-5 h-60 rounded-xl relative"
                 onClick={handlefourthOpen}
               >
