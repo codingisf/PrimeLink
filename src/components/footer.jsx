@@ -6,7 +6,6 @@ import {
   Facebook,
   Linkedin,
   Instagram,
-  Twitter,
   Youtube,
 } from "lucide-react";
 
@@ -17,16 +16,14 @@ function Footer() {
         <div className="flex flex-col lg:flex-row justify-between gap-12">
           {/* Company Info Section */}
           <div className="lg:w-1/3 flex flex-col items-start space-y-6">
-            <div className="flex items-center gap-4">
+            <div className="flex items-center flex-col justify-center gap-4">
               <img
                 src="/logo.svg"
                 alt="Prime Link Logo"
                 className="h-20 w-auto"
               />
               <div>
-                <p className="text-3xl font-bold uppercase tracking-wide">
-                  Prime Link
-                </p>
+                <p className="text-3xl font-bold tracking-wide">PrimeLink</p>
                 <p className="text-sm tracking-widest text-gray-300">
                   MANPOWER & STAFFING
                 </p>
@@ -88,7 +85,7 @@ function Footer() {
               <ul className="space-y-3 text-gray-400 text-sm">
                 <li>
                   <a
-                    href="#"
+                    href="/"
                     className="hover:text-blue-400 transition-colors flex items-center gap-2"
                   >
                     <span className="h-1 w-1 bg-blue-400 rounded-full opacity-0 hover:opacity-100 transition-opacity"></span>
@@ -97,7 +94,7 @@ function Footer() {
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="/services"
                     className="hover:text-blue-400 transition-colors flex items-center gap-2"
                   >
                     <span className="h-1 w-1 bg-blue-400 rounded-full opacity-0 hover:opacity-100 transition-opacity"></span>
@@ -106,7 +103,7 @@ function Footer() {
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="/about"
                     className="hover:text-blue-400 transition-colors flex items-center gap-2"
                   >
                     <span className="h-1 w-1 bg-blue-400 rounded-full opacity-0 hover:opacity-100 transition-opacity"></span>
@@ -115,7 +112,16 @@ function Footer() {
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="/industries"
+                    className="hover:text-blue-400 transition-colors flex items-center gap-2"
+                  >
+                    <span className="h-1 w-1 bg-blue-400 rounded-full opacity-0 hover:opacity-100 transition-opacity"></span>
+                    Industries
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/contact"
                     className="hover:text-blue-400 transition-colors flex items-center gap-2"
                   >
                     <span className="h-1 w-1 bg-blue-400 rounded-full opacity-0 hover:opacity-100 transition-opacity"></span>
@@ -131,7 +137,7 @@ function Footer() {
               <ul className="space-y-3 text-gray-400 text-sm">
                 <li>
                   <a
-                    href="#"
+                    href="/services#manpower-supply"
                     className="hover:text-blue-400 transition-colors flex items-center gap-2"
                   >
                     <span className="h-1 w-1 bg-blue-400 rounded-full opacity-0 hover:opacity-100 transition-opacity"></span>
@@ -140,7 +146,7 @@ function Footer() {
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="/services#overseas-requirement"
                     className="hover:text-blue-400 transition-colors flex items-center gap-2"
                   >
                     <span className="h-1 w-1 bg-blue-400 rounded-full opacity-0 hover:opacity-100 transition-opacity"></span>
@@ -149,7 +155,7 @@ function Footer() {
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="/services#contract-staffing"
                     className="hover:text-blue-400 transition-colors flex items-center gap-2"
                   >
                     <span className="h-1 w-1 bg-blue-400 rounded-full opacity-0 hover:opacity-100 transition-opacity"></span>
@@ -158,7 +164,7 @@ function Footer() {
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="/services#client-support"
                     className="hover:text-blue-400 transition-colors flex items-center gap-2"
                   >
                     <span className="h-1 w-1 bg-blue-400 rounded-full opacity-0 hover:opacity-100 transition-opacity"></span>
@@ -174,7 +180,7 @@ function Footer() {
               <ul className="space-y-3 text-gray-400 text-sm">
                 <li>
                   <a
-                    href="#"
+                    href="/industries#construction"
                     className="hover:text-blue-400 transition-colors flex items-center gap-2"
                   >
                     <span className="h-1 w-1 bg-blue-400 rounded-full opacity-0 hover:opacity-100 transition-opacity"></span>
@@ -183,7 +189,7 @@ function Footer() {
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="/industries#oil-gas"
                     className="hover:text-blue-400 transition-colors flex items-center gap-2"
                   >
                     <span className="h-1 w-1 bg-blue-400 rounded-full opacity-0 hover:opacity-100 transition-opacity"></span>
@@ -192,7 +198,7 @@ function Footer() {
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="/industries#healthcare"
                     className="hover:text-blue-400 transition-colors flex items-center gap-2"
                   >
                     <span className="h-1 w-1 bg-blue-400 rounded-full opacity-0 hover:opacity-100 transition-opacity"></span>
@@ -201,7 +207,7 @@ function Footer() {
                 </li>
                 <li>
                   <a
-                    href="#"
+                    href="/industries#hospitality"
                     className="hover:text-blue-400 transition-colors flex items-center gap-2"
                   >
                     <span className="h-1 w-1 bg-blue-400 rounded-full opacity-0 hover:opacity-100 transition-opacity"></span>
@@ -260,10 +266,13 @@ function Footer() {
               href="#"
               className="bg-gray-800 p-2 rounded-full hover:bg-black hover:text-white transition-all duration-300 group"
             >
-              <Twitter
-                size={18}
-                className="text-gray-400 group-hover:text-white"
-              />
+              <svg
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                className="w-[18px] h-[18px] text-gray-400 group-hover:text-white"
+              >
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+              </svg>
             </a>
             <a
               href="#"
