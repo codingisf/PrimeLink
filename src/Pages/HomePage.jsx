@@ -120,10 +120,10 @@ function HomePage() {
       />
 
       {/* Home Section */}
-      <section className="bg-[url('/Homepage/1_Home_content.jpg')]  bg-cover bg-center bg-no-repeat lg:h-[80vh] py-3 w-full text-white">
+      <section className="bg-[url('/Homepage/1_Home_content.jpg')] flex flex-col bg-cover bg-center bg-no-repeat min-h-[100vh] py-3 w-full text-white">
         {/* NavBar */}
         <StickyNavbar />
-        <div className="flex flex-col justify-center h-full px-6 lg:px-20 w-full lg:w-[60vw] text-white space-y-6 mt-10 lg:-mt-10">
+        <div className="flex flex-col flex-1 justify-center px-6 lg:px-20 w-full lg:w-[60vw] text-white space-y-6">
           <Reveal delay={0.1}>
             <p className="text-lg">An International Manpower Agency</p>
           </Reveal>
@@ -157,21 +157,21 @@ function HomePage() {
 
           <Reveal delay={0.4}>
             <div className="flex flex-col sm:flex-row gap-4 mt-4">
-              <button className="px-6 py-3 border border-[#152e44] text-white hover:cursor-pointer bg-[#152e44] rounded-lg font-semibold transition-colors hover:bg-transparent">
-                Get Started!
-              </button>
-              <button className="px-6 py-3 border border-white bg-white text-black rounded-lg font-semibold transition-colors hover:bg-transparent hover:text-white">
-                Hire Talent
-              </button>
+              <a href="/services">
+                <button className="px-6 py-3 border border-[#152e44] text-white hover:cursor-pointer bg-[#152e44] rounded-lg font-semibold transition-colors hover:bg-transparent">
+                  Get Started!
+                </button>
+              </a>
+
+              <a href="/contact">
+                <button className="px-6 py-3 border border-white bg-white text-black rounded-lg font-semibold transition-colors hover:bg-transparent hover:text-white">
+                  Hire Talent
+                </button>
+              </a>
             </div>
           </Reveal>
         </div>
       </section>
-
-      {/* Company logos */}
-      <div className="lg:h-[20vh] w-full">
-        <p></p>
-      </div>
 
       {/* About section */}
       <section className="w-full min-h-screen lg:px-30 lg:py-20 px-10 py-5">
@@ -204,9 +204,12 @@ function HomePage() {
                 companies with solid, verified across multiple industries
                 delivering the right people exactly when you need them.
               </p>
-              <button className="px-6 py-3 border border-[#152e44] text-white hover:text-black hover:cursor-pointer bg-[#152e44] rounded-lg font-semibold transition-colors hover:bg-transparent">
-                Learn More
-              </button>
+
+              <a href="/about">
+                <button className="px-6 py-3 border border-[#152e44] text-white hover:text-black hover:cursor-pointer bg-[#152e44] rounded-lg font-semibold transition-colors hover:bg-transparent">
+                  Learn More
+                </button>
+              </a>
             </Reveal>
           </div>
         </div>
@@ -541,9 +544,11 @@ function HomePage() {
                 them
               </p>
 
-              <button className="px-6 py-3 border w-fit border-[#152e44] text-white hover:text-black hover:cursor-pointer bg-[#152e44] rounded-lg font-semibold transition-colors hover:bg-transparent">
-                Learn More
-              </button>
+              <a href="/">
+                <button className="px-6 py-3 border w-fit border-[#152e44] text-white hover:text-black hover:cursor-pointer bg-[#152e44] rounded-lg font-semibold transition-colors hover:bg-transparent">
+                  Learn More
+                </button>
+              </a>
             </Reveal>
           </div>
         </div>
@@ -743,12 +748,14 @@ function HomePage() {
         </div>
 
         <div className="flex justify-center pt-10">
-          <button
-            className="px-6 py-3 border border-[#152e44] text-white bg-[#152e44] hover:cursor-pointer rounded-lg font-semibold 
+          <a href="/industries">
+            <button
+              className="px-6 py-3 border border-[#152e44] text-white bg-[#152e44] hover:cursor-pointer rounded-lg font-semibold 
     transition-all duration-300 hover:bg-transparent hover:text-[#152e44]"
-          >
-            Learn More
-          </button>
+            >
+              Learn More
+            </button>
+          </a>
         </div>
       </section>
 
