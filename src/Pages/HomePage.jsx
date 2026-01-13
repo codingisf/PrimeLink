@@ -847,9 +847,11 @@ function HomePage() {
           <h1 className="lg:text-6xl">
             Your trusted partner for consistent, <br /> high-quality manpower.
           </h1>
+          <a href="/contact">
           <button className="px-6 py-3 bg-white/10 backdrop-blur-xl rounded-lg font-bold w-fit mt-5 hover:cursor-pointer">
             Hire Talent
           </button>
+          </a>
         </div>
       </section>
 
