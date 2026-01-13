@@ -236,7 +236,7 @@ function Footer() {
 
           <div className="flex gap-4">
             <a
-              href="#"
+              href="https://www.facebook.com/share/1DgrtcE4nm/"
               className="bg-gray-800 p-2 rounded-full hover:bg-blue-600 hover:text-white transition-all duration-300 group"
             >
               <Facebook
@@ -263,19 +263,13 @@ function Footer() {
               />
             </a>
             <a
-              href="#"
+              href="https://pin.it/8Zp6xszb4"
               className="bg-gray-800 p-2 rounded-full hover:bg-black hover:text-white transition-all duration-300 group"
             >
-              <svg
-                viewBox="0 0 24 24"
-                fill="currentColor"
-                className="w-[18px] h-[18px] text-gray-400 group-hover:text-white"
-              >
-                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-              </svg>
+              
             </a>
             <a
-              href="#"
+              href="https://www.youtube.com/@PrimeLinkManpowerStaffing-c7r"
               className="bg-gray-800 p-2 rounded-full hover:bg-red-600 hover:text-white transition-all duration-300 group"
             >
               <Youtube
