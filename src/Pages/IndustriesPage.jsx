@@ -7,15 +7,6 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 import "../App.css";
 
 function IndustriesPage() {
-  const testimonials = [import React, { useRef } from "react";
-import SEO from "../components/SEO.jsx";
-import Reveal from "../components/Reveal.jsx";
-import StickyNavbar from "../components/StickyNavbar.jsx";
-import Footer from "../components/footer.jsx";
-import { ArrowLeft, ArrowRight } from "lucide-react";
-import "../App.css";
-
-function IndustriesPage() {
   const testimonials = [
     // Add more items as needed
     {
@@ -1003,4 +994,5 @@ export default IndustriesPage;
 }
 
 export default IndustriesPage;
+
 
