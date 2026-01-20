@@ -8,6 +8,7 @@ import {
   Instagram,
   Youtube,
 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -16,7 +17,7 @@ function Footer() {
         <div className="flex flex-col lg:flex-row justify-between gap-12">
           {/* Company Info Section */}
           <div className="lg:w-1/3 flex flex-col items-start space-y-6">
-            <div className="flex items-center flex-col justify-center gap-4">
+            <div className="flex items-center text-center flex-col justify-center gap-4">
               <img
                 src="/logo.svg"
                 alt="Prime Link Logo"
@@ -84,49 +85,49 @@ function Footer() {
               </h3>
               <ul className="space-y-3 text-gray-400 text-sm">
                 <li>
-                  <a
-                    href="/"
+                  <Link
+                    to="/"
                     className="hover:text-blue-400 transition-colors flex items-center gap-2"
                   >
                     <span className="h-1 w-1 bg-blue-400 rounded-full opacity-0 hover:opacity-100 transition-opacity"></span>
                     Home
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="/services"
+                  <Link
+                    to="/services"
                     className="hover:text-blue-400 transition-colors flex items-center gap-2"
                   >
                     <span className="h-1 w-1 bg-blue-400 rounded-full opacity-0 hover:opacity-100 transition-opacity"></span>
                     Service
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="/about"
+                  <Link
+                    to="/about"
                     className="hover:text-blue-400 transition-colors flex items-center gap-2"
                   >
                     <span className="h-1 w-1 bg-blue-400 rounded-full opacity-0 hover:opacity-100 transition-opacity"></span>
                     About Us
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="/industries"
+                  <Link
+                    to="/industries"
                     className="hover:text-blue-400 transition-colors flex items-center gap-2"
                   >
                     <span className="h-1 w-1 bg-blue-400 rounded-full opacity-0 hover:opacity-100 transition-opacity"></span>
                     Industries
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="/contact"
+                  <Link
+                    to="/contact"
                     className="hover:text-blue-400 transition-colors flex items-center gap-2"
                   >
                     <span className="h-1 w-1 bg-blue-400 rounded-full opacity-0 hover:opacity-100 transition-opacity"></span>
                     Contact Us
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -136,40 +137,40 @@ function Footer() {
               </h3>
               <ul className="space-y-3 text-gray-400 text-sm">
                 <li>
-                  <a
-                    href="/services#manpower-supply"
+                  <Link
+                    to="/services#manpower-supply"
                     className="hover:text-blue-400 transition-colors flex items-center gap-2"
                   >
                     <span className="h-1 w-1 bg-blue-400 rounded-full opacity-0 hover:opacity-100 transition-opacity"></span>
                     Manpower Supply
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="/services#overseas-requirement"
+                  <Link
+                    to="/services#overseas-requirement"
                     className="hover:text-blue-400 transition-colors flex items-center gap-2"
                   >
                     <span className="h-1 w-1 bg-blue-400 rounded-full opacity-0 hover:opacity-100 transition-opacity"></span>
                     Overseas Requirement
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="/services#contract-staffing"
+                  <Link
+                    to="/services#contract-staffing"
                     className="hover:text-blue-400 transition-colors flex items-center gap-2"
                   >
                     <span className="h-1 w-1 bg-blue-400 rounded-full opacity-0 hover:opacity-100 transition-opacity"></span>
                     Temporary & Contract Staffing
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="/services#client-support"
+                  <Link
+                    to="/services#client-support"
                     className="hover:text-blue-400 transition-colors flex items-center gap-2"
                   >
                     <span className="h-1 w-1 bg-blue-400 rounded-full opacity-0 hover:opacity-100 transition-opacity"></span>
                     Clients & Candidate Support
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -179,40 +180,40 @@ function Footer() {
               </h3>
               <ul className="space-y-3 text-gray-400 text-sm">
                 <li>
-                  <a
-                    href="/industries#construction"
+                  <Link
+                    to="/industries#construction"
                     className="hover:text-blue-400 transition-colors flex items-center gap-2"
                   >
                     <span className="h-1 w-1 bg-blue-400 rounded-full opacity-0 hover:opacity-100 transition-opacity"></span>
                     Construction & Engineering
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="/industries#oil-gas"
+                  <Link
+                    to="/industries#oil-gas"
                     className="hover:text-blue-400 transition-colors flex items-center gap-2"
                   >
                     <span className="h-1 w-1 bg-blue-400 rounded-full opacity-0 hover:opacity-100 transition-opacity"></span>
                     Oil & Gas Industry
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="/industries#healthcare"
+                  <Link
+                    to="/industries#healthcare"
                     className="hover:text-blue-400 transition-colors flex items-center gap-2"
                   >
                     <span className="h-1 w-1 bg-blue-400 rounded-full opacity-0 hover:opacity-100 transition-opacity"></span>
                     Healthcare and Medical
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="/industries#hospitality"
+                  <Link
+                    to="/industries#hospitality"
                     className="hover:text-blue-400 transition-colors flex items-center gap-2"
                   >
                     <span className="h-1 w-1 bg-blue-400 rounded-full opacity-0 hover:opacity-100 transition-opacity"></span>
                     Hospitality Services
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -264,9 +265,18 @@ function Footer() {
             </a>
             <a
               href="https://pin.it/8Zp6xszb4"
-              className="bg-gray-800 p-2 rounded-full hover:bg-black hover:text-white transition-all duration-300 group"
+              className="bg-gray-800 p-2 rounded-full hover:bg-red-600 hover:text-white transition-all duration-300 group"
             >
-              
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                className="text-gray-400 group-hover:text-white"
+              >
+                <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.162-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.005-4.869-3.643 0-5.784 2.739-5.784 5.568 0 1.1.424 2.278.955 2.911.105.133.118.249.087.385-.098.399-.321 1.231-.365 1.417-.061.267-.281.324-.652.196-2.431-1.096-3.95-4.521-3.95-7.305 0-5.94 4.316-11.391 12.448-11.391 6.537 0 10.82 4.619 10.82 10.706 0 6.386-4.004 11.129-9.563 11.129-1.868 0-3.623-.971-4.225-2.116l-1.15 4.38c-.416 1.583-1.545 3.568-2.302 4.774C8.75 23.918 10.338 24 12.017 24c6.627 0 11.985-5.365 11.985-11.987 0-6.624-5.36-11.987-11.985-11.987z" />
+              </svg>
             </a>
             <a
               href="https://www.youtube.com/@PrimeLinkManpowerStaffing-c7r"
