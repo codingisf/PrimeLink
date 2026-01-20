@@ -1,4 +1,5 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
+import { Link } from "react-router-dom";
 import Reveal from "../components/Reveal.jsx";
 import SEO from "../components/SEO.jsx";
 import StickyNavbar from "../components/StickyNavbar.jsx";
@@ -21,7 +22,7 @@ function HomePage() {
       name: "Kani Kumar",
       role: "Welder",
       testimonial:
-        "Your Manpower agency has been delivering consistent and professional service. The recruitment process is well Organized. Communication, Follow ups, and document handling are handled efficiently. Overall, we are satisfied with the quality of service",
+        "Your Manpower agency has been delivering consistent and professional service. The recruitment process is well organized. Communication, follow-ups, and document handling are handled efficiently. Overall, we are satisfied with the quality of service",
       url: "/Fedback-1.jpg",
     },
     {
@@ -42,7 +43,7 @@ function HomePage() {
       name: "Samson",
       role: "Operation Theatre Technician",
       testimonial:
-        "Working with Primelinkmanpower and staffing was an exceptional experience from start to finish. I was kept informed with prompt updates, and their encouragement gave me the confidence to excel in interviews. Thanks for their professionalism and genuine care!",
+        "Working with Prime Link Manpower and staffing was an exceptional experience from start to finish. I was kept informed with prompt updates, and their encouragement gave me the confidence to excel in interviews. Thanks for their professionalism and genuine care!",
       url: "/Fedback-4.jpeg",
     },
     {
@@ -52,9 +53,61 @@ function HomePage() {
         "They worked collaboratively, guiding me through each stage of my recruitment journey with clear communication and genuine care. Their teamwork and dedication made what can often be a stressful experience feel seamless and positive.",
       url: "/Fedback-5.jpeg",
     },
+    {
+      name: "Manoj",
+      role: "Pharmacist",
+      testimonial:
+        "I’m truly grateful for their efforts in helping me secure a role that I can step into with confidence, and I can’t recommend their service highly enough.",
+      // url: "/Fedback-5.jpeg",
+    },
+    {
+      name: "Karthik",
+      role: "Mechanical Engineer",
+      testimonial:
+        "They worked collaboratively, guiding me through each stage of my recruitment journey with clear communication and genuine care. Their teamwork and dedication made what can often be a stressful experience feel seamless and positive.",
+      // url: "/Fedback-5.jpeg",
+    },
+    {
+      name: "Rajesh",
+      role: "ICU nurse",
+      testimonial:
+        "I have had an outstanding experience with Your Recruit, thanks to the incredible support from Your Recruit agency. From start to finish, their customer service has been second to none friendly, professional, and highly adaptable to my needs throughout the process.",
+      // url: "/Fedback-5.jpeg",
+    },
   ];
 
   const scrollRef = useRef(null);
+
+  /* Drag to Scroll Logic */
+  const [isDragging, setIsDragging] = useState(false);
+  const [startX, setStartX] = useState(0);
+  const [scrollLeftPos, setScrollLeftPos] = useState(0);
+
+  const [openWhyChoose, setOpenWhyChoose] = useState(false);
+  const handleOpenWhyChoose = () => setOpenWhyChoose(!openWhyChoose);
+
+  const handleMouseDown = (e) => {
+    if (!scrollRef.current) return;
+    setIsDragging(true);
+    setStartX(e.pageX - scrollRef.current.offsetLeft);
+    setScrollLeftPos(scrollRef.current.scrollLeft);
+  };
+
+  const handleMouseLeave = () => {
+    setIsDragging(false);
+  };
+
+  const handleMouseUp = () => {
+    setIsDragging(false);
+  };
+
+  const handleMouseMove = (e) => {
+    if (!isDragging || !scrollRef.current) return;
+    e.preventDefault();
+    const x = e.pageX - scrollRef.current.offsetLeft;
+    const walk = (x - startX) * 2; // Scroll speed multiplier
+    scrollRef.current.scrollLeft = scrollLeftPos - walk;
+  };
 
   const scrollLeft = () => {
     if (scrollRef.current) {
@@ -157,17 +210,17 @@ function HomePage() {
 
           <Reveal delay={0.4}>
             <div className="flex flex-col sm:flex-row gap-4 mt-4">
-              <a href="/services">
+              <Link to="/services">
                 <button className="px-6 py-3 border border-[#152e44] text-white hover:cursor-pointer bg-[#152e44] rounded-lg font-semibold transition-colors hover:bg-transparent">
                   Get Started!
                 </button>
-              </a>
+              </Link>
 
-              <a href="/contact">
+              <Link to="/contact">
                 <button className="px-6 py-3 border border-white bg-white text-black rounded-lg font-semibold transition-colors hover:bg-transparent hover:text-white">
                   Hire Talent
                 </button>
-              </a>
+              </Link>
             </div>
           </Reveal>
         </div>
@@ -205,11 +258,11 @@ function HomePage() {
                 delivering the right people exactly when you need them.
               </p>
 
-              <a href="/about">
+              <Link to="/about">
                 <button className="px-6 py-3 border border-[#152e44] text-white hover:text-black hover:cursor-pointer bg-[#152e44] rounded-lg font-semibold transition-colors hover:bg-transparent">
                   Learn More
                 </button>
-              </a>
+              </Link>
             </Reveal>
           </div>
         </div>
@@ -544,11 +597,46 @@ function HomePage() {
                 them
               </p>
 
-              <a href="/">
-                <button className="px-6 py-3 border w-fit border-[#152e44] text-white hover:text-black hover:cursor-pointer bg-[#152e44] rounded-lg font-semibold transition-colors hover:bg-transparent">
-                  Learn More
-                </button>
-              </a>
+              <button
+                onClick={handleOpenWhyChoose}
+                className="px-6 py-3 border w-fit border-[#152e44] text-white hover:text-black hover:cursor-pointer bg-[#152e44] rounded-lg font-semibold transition-colors hover:bg-transparent"
+              >
+                Learn More
+              </button>
+              <Dialog open={openWhyChoose} handler={handleOpenWhyChoose}>
+                <DialogHeader>Why Choose Us?</DialogHeader>
+                <DialogBody>
+                  <ul className="list-disc pl-5 space-y-2 text-lg text-gray-700">
+                    <li>
+                      <strong>Verified Talent:</strong> We rigorously screen and
+                      evaluate all candidates to ensure they meet your high
+                      standards.
+                    </li>
+                    <li>
+                      <strong>Quick Turnaround:</strong> Our efficient processes
+                      get you the right people fast, minimizing downtime.
+                    </li>
+                    <li>
+                      <strong>Cost-Effective Solutions:</strong> Competitive
+                      pricing without compromising on quality or reliability.
+                    </li>
+                    <li>
+                      <strong>Industry Expertise:</strong> Specialized knowledge
+                      across multiple sectors to understand your unique needs.
+                    </li>
+                  </ul>
+                </DialogBody>
+                <DialogFooter>
+                  <Button
+                    variant="text"
+                    color="red"
+                    onClick={handleOpenWhyChoose}
+                    className="mr-1"
+                  >
+                    <span>Close</span>
+                  </Button>
+                </DialogFooter>
+              </Dialog>
             </Reveal>
           </div>
         </div>
@@ -636,7 +724,7 @@ function HomePage() {
 
         {/* Image rows */}
         <div className="mt-10 mx-auto max-w-7xl">
-          <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 items-center gap-y-10 gap-x-10">
+          <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 items-center mx-auto gap-y-10 gap-x-10">
             <Reveal>
               <FlipCard
                 image="/Homepage/5.Construction&Engineering.jpg"
@@ -748,14 +836,14 @@ function HomePage() {
         </div>
 
         <div className="flex justify-center pt-10">
-          <a href="/industries">
+          <Link to="/industries">
             <button
               className="px-6 py-3 border border-[#152e44] text-white bg-[#152e44] hover:cursor-pointer rounded-lg font-semibold 
     transition-all duration-300 hover:bg-transparent hover:text-[#152e44]"
             >
               Learn More
             </button>
-          </a>
+          </Link>
         </div>
       </section>
 
@@ -792,51 +880,61 @@ function HomePage() {
 
         {/* Testimonials */}
         <div className="relative w-full lg:mt-32">
-          {/* Arrow Left */}
-          <button
-            onClick={scrollLeft}
-            className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-200 hover:bg-gray-300 p-3 rounded-full shadow z-10"
-          >
-            <ArrowLeft />
-          </button>
+          <Reveal width="100%">
+            {/* Arrow Left */}
+            <button
+              onClick={scrollLeft}
+              className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-200 hover:bg-gray-300 p-3 rounded-full shadow z-10"
+            >
+              <ArrowLeft />
+            </button>
 
-          {/* Cards Container */}
-          <div
-            ref={scrollRef}
-            className="flex gap-4 overflow-x-auto scroll-smooth px-10 scrollbar-hide"
-          >
-            {testimonials.map((item, index) => (
-              <div
-                key={index}
-                className="w-[250px] min-w-[250px] bg-white shadow-lg rounded-2xl p-5 flex-shrink-0 flex flex-col gap-y-20"
-              >
-                <div className="flex gap-x-5">
-                  <img
-                    src={item.url}
-                    alt="Testimonial Avatar"
-                    loading="lazy"
-                    className="h-20 w-20 rounded-full"
-                  />
-                  <p className="mt-4 font-semibold text-right">
-                    - {item.name}, <br />
-                    <span className="text-sm">{item.role}</span>
-                  </p>
+            {/* Cards Container */}
+            <div
+              ref={scrollRef}
+              className={`flex gap-4 overflow-x-auto px-10 pb-4 ${
+                isDragging ? "cursor-grabbing" : "cursor-grab scroll-smooth"
+              }`}
+              onMouseDown={handleMouseDown}
+              onMouseLeave={handleMouseLeave}
+              onMouseUp={handleMouseUp}
+              onMouseMove={handleMouseMove}
+            >
+              {testimonials.map((item, index) => (
+                <div
+                  key={index}
+                  className="w-[250px] min-w-[250px] bg-white shadow-lg rounded-2xl p-5 flex-shrink-0 flex flex-col gap-y-20"
+                >
+                  <div className="flex gap-x-5">
+                    {item.url && (
+                      <img
+                        src={item.url}
+                        alt="Testimonial Avatar"
+                        loading="lazy"
+                        className="h-20 w-20 rounded-full"
+                      />
+                    )}
+                    <p className="mt-4 font-semibold text-right">
+                      - {item.name}, <br />
+                      <span className="text-sm">{item.role}</span>
+                    </p>
+                  </div>
+
+                  <div className="relative">
+                    <p className="text-md italic">"{item.testimonial}"</p>
+                  </div>
                 </div>
+              ))}
+            </div>
 
-                <div className="relative">
-                  <p className="text-md italic">"{item.testimonial}"</p>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          {/* Arrow Right */}
-          <button
-            onClick={scrollRight}
-            className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-200 hover:bg-gray-300 p-3 rounded-full shadow z-10"
-          >
-            <ArrowRight />
-          </button>
+            {/* Arrow Right */}
+            <button
+              onClick={scrollRight}
+              className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-200 hover:bg-gray-300 p-3 rounded-full shadow z-10"
+            >
+              <ArrowRight />
+            </button>
+          </Reveal>
         </div>
       </section>
 
@@ -847,11 +945,11 @@ function HomePage() {
           <h1 className="lg:text-6xl">
             Your trusted partner for consistent, <br /> high-quality manpower.
           </h1>
-          <a href="/contact">
-          <button className="px-6 py-3 bg-white/10 backdrop-blur-xl rounded-lg font-bold w-fit mt-5 hover:cursor-pointer">
-            Hire Talent
-          </button>
-          </a>
+          <Link to="/contact">
+            <button className="px-6 py-3 bg-white/10 backdrop-blur-xl rounded-lg font-bold w-fit mt-5 hover:cursor-pointer">
+              Hire Talent
+            </button>
+          </Link>
         </div>
       </section>
 
