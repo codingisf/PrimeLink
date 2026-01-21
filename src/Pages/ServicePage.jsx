@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { ChevronDown } from "lucide-react";
 import SEO from "../components/SEO.jsx";
 import Reveal from "../components/Reveal.jsx";
@@ -38,11 +39,13 @@ function Servicepage() {
       />
 
       {/* ================= HERO SECTION ================= */}
-      <section className="bg-[url('/Servicepage/1.ServicePage.jpg')] bg-cover bg-center bg-no-repeat w-full text-white py-5 lg:h-screen">
+      <section className="bg-[url('/Servicepage/1.ServicePage.jpg')] bg-cover bg-center bg-no-repeat w-full text-white py-5 lg:h-screen ">
         <StickyNavbar />
 
         <div className="flex flex-col items-center justify-center gap-y-4 lg:h-[80%] px-6">
-          <p className="bg-white text-black px-4 py-2 rounded-full">Services</p>
+          <p className="bg-white text-black px-4 py-2 rounded-full mt-5 lg:mt-0">
+            Services
+          </p>
 
           <div className="font-semibold text-center text-3xl lg:text-6xl">
             <Reveal>
@@ -79,9 +82,11 @@ function Servicepage() {
               companies with solid, verified talent across multiple industries.
             </p>
 
-            <button className="px-6 py-3 bg-[#152e44] text-white border border-[#152e44] rounded-lg font-semibold transition hover:bg-transparent hover:text-black">
-              Learn More
-            </button>
+            <Link to="/contact">
+              <button className="px-6 py-3 bg-[#152e44] text-white border border-[#152e44] rounded-lg font-semibold transition hover:bg-transparent hover:text-black">
+                Learn More
+              </button>
+            </Link>
           </div>
         </div>
 
@@ -152,10 +157,10 @@ function Servicepage() {
 
         <div className=" mt-5">
           <div className="flex lg:flex-row flex-col justify-evenly w-full items-center gap-y-10">
-            <Reveal>
+            <Reveal width="100%">
               <div
                 id="manpower-supply"
-                className="bg-[url('/Homepage/3.ManPowerSupply.png')] bg-cover bg-center bg-no-repeat lg:w-[390px] gap-y-5 h-60 rounded-xl relative "
+                className="bg-[url('/Homepage/3.ManPowerSupply.png')] bg-gray-200 bg-cover bg-center bg-no-repeat w-full lg:w-[390px] gap-y-5 h-60 rounded-xl relative "
                 onClick={handlefirstOpen}
               >
                 <div className="bg-gray-800 absolute w-[90%] min-h-10 bottom-1 rounded-t-xl">
@@ -171,7 +176,7 @@ function Servicepage() {
               handler={handlefirstOpen}
               className="z-[9999]"
             >
-              <DialogHeader>Man Power Supply</DialogHeader>
+              <DialogHeader>Manpower Supply</DialogHeader>
               <DialogBody>
                 PrimeLink Manpower & Staffing delivers dependable manpower
                 supply solutions, providing skilled and unskilled workforce to
@@ -200,10 +205,10 @@ function Servicepage() {
               </DialogFooter>
             </Dialog>
 
-            <Reveal>
+            <Reveal width="100%">
               <div
                 id="overseas-requirement"
-                className="bg-[url('/Homepage/3.OvearseasRequirement.jpg')] bg-cover bg-center bg-no-repeat lg:w-[390px] gap-y-5 h-60 rounded-xl relative"
+                className="bg-[url('/Homepage/3.OvearseasRequirement.jpg')] bg-gray-200 bg-cover bg-center bg-no-repeat w-full lg:w-[390px] gap-y-5 h-60 rounded-xl relative"
                 onClick={handlesecondOpen}
               >
                 <div className="bg-gray-800 absolute  w-[90%] min-h-10 bottom-1 rounded-t-xl ">
@@ -251,10 +256,10 @@ function Servicepage() {
           </Dialog>
 
           <div className="flex lg:flex-row flex-col mt-10 w-full items-center justify-evenly gap-y-10 ">
-            <Reveal>
+            <Reveal width="100%">
               <div
                 id="contract-staffing"
-                className="bg-[url('/Homepage/3.Temporaryandcontractstaffing.jpg')]  bg-cover bg-center bg-no-repeat lg:w-[390px] gap-y-5 h-60 rounded-xl relative"
+                className="bg-[url('/Homepage/3.Temporaryandcontractstaffing.jpg')] bg-gray-200  bg-cover bg-center bg-no-repeat w-full lg:w-[390px] gap-y-5 h-60 rounded-xl relative"
                 onClick={handlethirdOpen}
               >
                 <div className="bg-gray-800 absolute  w-[90%] min-h-10 bottom-1 rounded-t-xl ">
@@ -298,10 +303,10 @@ function Servicepage() {
               </DialogFooter>
             </Dialog>
 
-            <Reveal>
+            <Reveal width="100%">
               <div
                 id="client-support"
-                className="bg-[url('/Homepage/3.Clientsandcandidatessupport.jpg')] bg-cover bg-center bg-no-repeat lg:w-[390px] gap-y-5 h-60 rounded-xl relative"
+                className="bg-[url('/Homepage/3.Clientsandcandidatessupport.jpg')] bg-gray-200 bg-cover bg-center bg-no-repeat w-full lg:w-[390px] gap-y-5 h-60 rounded-xl relative"
                 onClick={handlefourthOpen}
               >
                 <div className="bg-gray-800 absolute  w-[90%] min-h-10 bottom-1 rounded-t-xl ">
