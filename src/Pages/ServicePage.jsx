@@ -157,7 +157,7 @@ function Servicepage() {
 
         <div className=" mt-5">
           <div className="flex lg:flex-row flex-col justify-evenly w-full items-center gap-y-10">
-            <Reveal width="100%">
+            <Reveal width={null} className="w-full lg:w-fit">
               <div
                 id="manpower-supply"
                 className="bg-[url('/Homepage/3.ManPowerSupply.png')] bg-gray-200 bg-cover bg-center bg-no-repeat w-full lg:w-[390px] gap-y-5 h-60 rounded-xl relative "
@@ -205,7 +205,7 @@ function Servicepage() {
               </DialogFooter>
             </Dialog>
 
-            <Reveal width="100%">
+            <Reveal width={null} className="w-full lg:w-fit">
               <div
                 id="overseas-requirement"
                 className="bg-[url('/Homepage/3.OvearseasRequirement.jpg')] bg-gray-200 bg-cover bg-center bg-no-repeat w-full lg:w-[390px] gap-y-5 h-60 rounded-xl relative"
@@ -256,7 +256,7 @@ function Servicepage() {
           </Dialog>
 
           <div className="flex lg:flex-row flex-col mt-10 w-full items-center justify-evenly gap-y-10 ">
-            <Reveal width="100%">
+            <Reveal width={null} className="w-full lg:w-fit">
               <div
                 id="contract-staffing"
                 className="bg-[url('/Homepage/3.Temporaryandcontractstaffing.jpg')] bg-gray-200  bg-cover bg-center bg-no-repeat w-full lg:w-[390px] gap-y-5 h-60 rounded-xl relative"
@@ -303,7 +303,7 @@ function Servicepage() {
               </DialogFooter>
             </Dialog>
 
-            <Reveal width="100%">
+            <Reveal width={null} className="w-full lg:w-fit">
               <div
                 id="client-support"
                 className="bg-[url('/Homepage/3.Clientsandcandidatessupport.jpg')] bg-gray-200 bg-cover bg-center bg-no-repeat w-full lg:w-[390px] gap-y-5 h-60 rounded-xl relative"
