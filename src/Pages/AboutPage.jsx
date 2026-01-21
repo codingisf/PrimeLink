@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { ChevronDown } from "lucide-react";
 import SEO from "../components/SEO.jsx";
 import Reveal from "../components/Reveal.jsx";
@@ -39,8 +40,8 @@ function AboutPage() {
           </div>
 
           <p className="text-center">
-            We provide fast , flexiable manpower for your businesses. Our
-            skilled worker help <br />
+            We provide fast, flexible manpower for your businesses. Our skilled
+            workers help <br />
             you stay productive and grow.
           </p>
         </div>
@@ -74,8 +75,8 @@ function AboutPage() {
           </div>
           <div className="lg:w-1/2 mt-10">
             <p className="lg:text-lg text-md mb-5">
-              we make hiring simple ,fast , and efficient. Our team connects
-              companies with solid, verified across multiple industries
+              we make hiring simple, fast, and efficient. Our team connects
+              companies with solid, verified talent across multiple industries
               delivering the right people exactly when you need them.
             </p>
           </div>
@@ -89,7 +90,7 @@ function AboutPage() {
                 <h1 className="text-3xl font-semibold">Mission</h1>
               </div>
               <p className="mt-4">
-                We aim to deliver reliable, skilled manpower tha helips
+                We aim to deliver reliable, skilled manpower that helps
                 businesses work smarter and grow faster. Our mission is to
                 provide seamless staffing support.
               </p>
@@ -105,8 +106,8 @@ function AboutPage() {
               </div>
               <p className="mt-4">
                 To become the most trusted manpower partner for industries
-                worldwide. We wnvision a future where hiring is
-                simple,efficient, and accessible for all.
+                worldwide. We envision a future where hiring is simple,
+                efficient, and accessible for all.
               </p>
             </div>
           </Reveal>
@@ -234,8 +235,8 @@ function AboutPage() {
           <div className="lg:w-1/2 mt-5">
             <Reveal delay={0.2}>
               <p className="lg:text-xl text-lg mb-5">
-                we make hiring simple ,fast , and efficient. Our team connects
-                companies with solid, verified across multiple industries
+                we make hiring simple, fast, and efficient. Our team connects
+                companies with solid, verified talent across multiple industries
                 delivering the right people exactly when you need them.
               </p>
             </Reveal>
@@ -261,7 +262,7 @@ function AboutPage() {
                 <div className="lg:w-[30%]">
                   <p className="lg:text-6xl text-3xl font-bold mb-5">10k+</p>
                   <p className="lg:text-lg  mb-3">
-                    People has landed a job abroad
+                    People have landed a job abroad
                   </p>
                 </div>
                 <div className="lg:w-[30%]">
@@ -286,9 +287,11 @@ function AboutPage() {
             Trusted support for providing consistent , <br /> skilled manpower
             solutions.
           </h1>
-          <button className="px-6 py-3 border border-[#152e44] text-white hover:cursor-pointer bg-[#152e44] rounded-lg font-semibold transition-colors hover:bg-transparent">
-            Contact Now!
-          </button>
+          <Link to="/contact">
+            <button className="px-6 py-3 border border-[#152e44] text-white hover:cursor-pointer bg-[#152e44] rounded-lg font-semibold transition-colors hover:bg-transparent">
+              Contact Now!
+            </button>
+          </Link>
         </div>
       </section>
 
