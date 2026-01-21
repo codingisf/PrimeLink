@@ -20,15 +20,15 @@ const StickyNavbar = () => {
 
   return (
     <nav className="relative top-3 mx-auto z-50 w-[90%] rounded-xl bg-white/10 backdrop-blur-md shadow-lg px-6 py-3 transition-all duration-300">
-      <div className="flex items-center justify-between text-white">
+      <div className="flex items-center  justify-between text-white">
         {/* LOGO */}
-        <div className="flex items-center flex-col">
+        <div className="flex items-center flex-row gap-5">
           <img src="/logo.svg" alt="Logo" className="w-14" />
           <Link to="/" className="text-2xl font-bold text-center">
             PrimeLink <br /> Manpower & Staffing
           </Link>
         </div>
-        
+
         {/* DESKTOP MENU */}
         <div className="hidden lg:flex items-center gap-6 ">
           <ul className="flex items-center gap-8 ">
@@ -109,7 +109,7 @@ const StickyNavbar = () => {
           {menuItems.map((item, index) => (
             <li key={index}>
               <Link
-                to={`/${item.toLowerCase()}`}
+                to={item === "Home" ? "/" : `/${item.toLowerCase()}`}
                 className=""
                 onClick={() => setIsOpen(false)}
               >
