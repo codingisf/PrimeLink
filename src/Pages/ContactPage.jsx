@@ -1,3 +1,5 @@
+import React, { useState } from "react";
+import emailjs from "@emailjs/browser";
 import SEO from "../components/SEO.jsx";
 import Reveal from "../components/Reveal.jsx";
 import StickyNavbar from "../components/StickyNavbar.jsx";
@@ -6,6 +8,59 @@ import { Phone, Mail, MapPin } from "lucide-react";
 import "../App.css";
 
 function ContactPage() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    company: "",
+    interest: "",
+    message: "",
+  });
+
+  const [isSending, setIsSending] = useState(false);
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setIsSending(true);
+
+    const serviceId = "service_0wqiefi";
+    const templateId = "template_i3w05bd";
+    const publicKey = "j6Wd5q1xuAsnXM0QG";
+
+    const templateParams = {
+      from_name: formData.name,
+      from_email: formData.email,
+      company: formData.company,
+      interest: formData.interest,
+      message: formData.message,
+    };
+
+    emailjs
+      .send(serviceId, templateId, templateParams, publicKey)
+      .then((response) => {
+        console.log("SUCCESS!", response.status, response.text);
+        alert("Message sent successfully! We will get back to you soon.");
+        setFormData({
+          name: "",
+          email: "",
+          company: "",
+          interest: "",
+          message: "",
+        });
+      })
+      .catch((err) => {
+        console.log("FAILED...", err);
+        alert(
+          "Failed to send message. Please check your internet connection or email us directly.",
+        );
+      })
+      .finally(() => {
+        setIsSending(false);
+      });
+  };
   return (
     <>
       <SEO
@@ -62,7 +117,7 @@ function ContactPage() {
               <div className="w-[45%] text-center">
                 <p className="text-3xl lg:text-5xl font-bold mb-3">10k+</p>
                 <p className="lg:text-lg text-gray-600">
-                  People has landed a job abroad
+                  People have landed a job abroad
                 </p>
               </div>
               <div className="w-[45%] text-center">
@@ -95,15 +150,15 @@ function ContactPage() {
           </Reveal>
         </div>
 
-        <div className="flex flex-col lg:flex-row gap-12 lg:gap-20 item-start">
+        <div className="flex flex-col lg:flex-row gap-12 lg:gap-20 items-center lg:items-start">
           {/* Contact Form */}
-          <div className="lg:w-3/5">
+          <div className="lg:w-2/3">
             <Reveal>
-              <div className="bg-white p-8 lg:p-10 rounded-2xl shadow-lg border border-gray-100">
+              <div className="bg-white p-8 lg:p-10 rounded-2xl shadow-lg border border-gray-100 lg:w-2/3 lg:w-full w-[90vw]">
                 <h3 className="text-2xl font-bold text-gray-800 mb-6">
                   Send us a Message
                 </h3>
-                <form className="space-y-5">
+                <form className="space-y-5" onSubmit={handleSubmit}>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                     <div>
                       <label className="block text-sm font-medium text-gray-700 mb-1">
@@ -111,8 +166,12 @@ function ContactPage() {
                       </label>
                       <input
                         type="text"
+                        name="name"
+                        value={formData.name}
+                        onChange={handleChange}
                         placeholder="Your Name"
                         className="w-full p-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"
+                        required
                       />
                     </div>
                     <div>
@@ -121,8 +180,12 @@ function ContactPage() {
                       </label>
                       <input
                         type="email"
+                        name="email"
+                        value={formData.email}
+                        onChange={handleChange}
                         placeholder="email@example.com"
                         className="w-full p-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"
+                        required
                       />
                     </div>
                   </div>
@@ -132,6 +195,9 @@ function ContactPage() {
                     </label>
                     <input
                       type="text"
+                      name="company"
+                      value={formData.company}
+                      onChange={handleChange}
                       placeholder="Company Name"
                       className="w-full p-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"
                     />
@@ -142,6 +208,9 @@ function ContactPage() {
                     </label>
                     <input
                       type="text"
+                      name="interest"
+                      value={formData.interest}
+                      onChange={handleChange}
                       placeholder="e.g. Manpower Supply"
                       className="w-full p-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"
                     />
@@ -152,11 +221,18 @@ function ContactPage() {
                     </label>
                     <textarea
                       rows="4"
+                      name="message"
+                      value={formData.message}
+                      onChange={handleChange}
                       placeholder="Tell us about your requirements..."
                       className="w-full p-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"
+                      required
                     ></textarea>
                   </div>
-                  <button className="w-full py-4 bg-[#152e44] text-white font-bold rounded-lg hover:bg-blue-700 transition-all transform hover:-translate-y-1 shadow-md">
+                  <button
+                    type="submit"
+                    className="w-full py-4 bg-[#152e44] text-white font-bold rounded-lg hover:bg-blue-700 transition-all transform hover:-translate-y-1 shadow-md hover:cursor-pointer"
+                  >
                     Send Message
                   </button>
                 </form>
@@ -165,7 +241,7 @@ function ContactPage() {
           </div>
 
           {/* Contact Info & Map */}
-          <div className="lg:w-2/5 space-y-8">
+          <div className="lg:w-1/3 w-full space-y-8">
             <Reveal delay={0.2}>
               <div className="bg-blue-50 p-8 rounded-2xl border border-blue-100">
                 <h3 className="text-xl font-bold text-gray-900 mb-6">
