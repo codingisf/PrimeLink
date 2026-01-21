@@ -334,14 +334,14 @@ function HomePage() {
 
         <div className=" mt-5">
           <div className="flex lg:flex-row flex-col justify-evenly w-full items-center gap-y-10">
-            <Reveal>
+            <Reveal width="100%">
               <div
-                className="bg-[url('/Homepage/3.ManPowerSupply.png')] bg-cover bg-center bg-no-repeat lg:w-[390px] gap-y-5 h-60 rounded-xl relative "
+                className="bg-[url('/Homepage/3.ManPowerSupply.png')] bg-gray-200 bg-cover bg-center bg-no-repeat w-full lg:w-[390px] gap-y-5 h-60 rounded-xl relative "
                 onClick={handlefirstOpen}
               >
                 <div className="bg-gray-800 absolute w-[90%] min-h-10 bottom-1 rounded-t-xl">
                   <h1 className="text-xl lg:text-3xl text-white font-semibold p-2">
-                    Man Power Supply
+                    Manpower Supply
                   </h1>
                 </div>
               </div>
@@ -352,7 +352,7 @@ function HomePage() {
               handler={handlefirstOpen}
               className="z-[9999]"
             >
-              <DialogHeader>Man Power Supply</DialogHeader>
+              <DialogHeader>Manpower Supply</DialogHeader>
               <DialogBody>
                 PrimeLink Manpower & Staffing delivers dependable manpower
                 supply solutions, providing skilled and unskilled workforce to
@@ -381,9 +381,9 @@ function HomePage() {
               </DialogFooter>
             </Dialog>
 
-            <Reveal>
+            <Reveal width="100%">
               <div
-                className="bg-[url('/Homepage/3.OvearseasRequirement.jpg')] bg-cover bg-center bg-no-repeat lg:w-[390px] gap-y-5 h-60 rounded-xl relative"
+                className="bg-[url('/Homepage/3.OvearseasRequirement.jpg')] bg-gray-200 bg-cover bg-center bg-no-repeat w-full lg:w-[390px] gap-y-5 h-60 rounded-xl relative"
                 onClick={handlesecondOpen}
               >
                 <div className="bg-gray-800 absolute  w-[90%] min-h-10 bottom-1 rounded-t-xl ">
@@ -431,9 +431,9 @@ function HomePage() {
           </Dialog>
 
           <div className="flex lg:flex-row flex-col mt-10 w-full items-center justify-evenly gap-y-10 ">
-            <Reveal>
+            <Reveal width="100%">
               <div
-                className="bg-[url('/Homepage/3.Temporaryandcontractstaffing.jpg')]  bg-cover bg-center bg-no-repeat lg:w-[390px] gap-y-5 h-60 rounded-xl relative"
+                className="bg-[url('/Homepage/3.Temporaryandcontractstaffing.jpg')] bg-gray-200  bg-cover bg-center bg-no-repeat w-full lg:w-[390px] gap-y-5 h-60 rounded-xl relative"
                 onClick={handlethirdOpen}
               >
                 <div className="bg-gray-800 absolute  w-[90%] min-h-10 bottom-1 rounded-t-xl ">
@@ -477,9 +477,9 @@ function HomePage() {
               </DialogFooter>
             </Dialog>
 
-            <Reveal>
+            <Reveal width="100%">
               <div
-                className="bg-[url('/Homepage/3.Clientsandcandidatessupport.jpg')] bg-cover bg-center bg-no-repeat lg:w-[390px] gap-y-5 h-60 rounded-xl relative"
+                className="bg-[url('/Homepage/3.Clientsandcandidatessupport.jpg')] bg-gray-200 bg-cover bg-center bg-no-repeat w-full lg:w-[390px] gap-y-5 h-60 rounded-xl relative"
                 onClick={handlefourthOpen}
               >
                 <div className="bg-gray-800 absolute  w-[90%] min-h-10 bottom-1 rounded-t-xl ">
@@ -724,7 +724,7 @@ function HomePage() {
 
         {/* Image rows */}
         <div className="mt-10 mx-auto max-w-7xl">
-          <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 items-center mx-auto gap-y-10 gap-x-10">
+          <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 items-center justify-items-center mx-auto gap-y-10 gap-x-10">
             <Reveal>
               <FlipCard
                 image="/Homepage/5.Construction&Engineering.jpg"
