@@ -24,7 +24,7 @@ function Footer() {
                 className="h-20 w-auto"
               />
               <div>
-                <p className="text-3xl font-bold tracking-wide">PrimeLink</p>
+                <p className="text-5xl font-bold tracking-wide">PrimeLink</p>
                 <p className="text-sm tracking-widest text-gray-300">
                   MANPOWER & STAFFING
                 </p>
@@ -68,11 +68,13 @@ function Footer() {
                 <div className="p-2 bg-blue-500/10 rounded-full group-hover:bg-blue-500/20 transition-colors mt-1">
                   <MapPin size={20} className="text-blue-400" />
                 </div>
+                <a href="https://maps.app.goo.gl/NNxkEhJGdsywb8K49">
                 <p className="text-sm text-gray-300 leading-relaxed">
                   Palayakaram, Ayakkaranpulam, <br />
                   Vedaranyam (TK), Nagapattinam (DT) <br />
                   Pin 614707
                 </p>
+                </a>
               </div>
             </div>
           </div>
